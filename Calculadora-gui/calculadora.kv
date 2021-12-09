@@ -1,0 +1,48 @@
+<Principal>:
+    orientation: 'vertical'
+    id: Calculadora
+    display: calculadora
+    rows: 6
+    padding: 5
+    spacing: 5
+    TextInput:
+        id: calculadora
+        fonte_size: 10
+        multiline: False
+
+
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            id: botao1
+            text: '1'
+            height: 60
+            size_hint: 0.23, 1.23
+            pos_hint_center_x: 0.5
+            on_release: root.numero_um()
+        Button:
+            id: botao2
+            text: '2'
+            pos_hint_center_y: {1.23}
+            size_hint: 0.23, 1.23
+            markup: True
+            on_release: root.numero_dois()
+        Button:
+            id: botao3
+            text: '3'
+            size_hint: 0.23, 1.23
+            color: 2, 2, 2, 2
+            pos: 300, 250
+            on_release: root.numero_tres()
+
+        Button:
+            text: '+'
+            size_hint: 0.23, 1.23
+            on_release: root.numeros_soma()
+
+
+
+
+
+
+
